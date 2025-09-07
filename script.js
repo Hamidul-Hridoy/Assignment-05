@@ -29,13 +29,13 @@ document.addEventListener("click", function(e) {
 
     if (e.target.closest('.callBtn')) {
         if (coinCount < 20) {
-            alert("You do not have enough coins to make a call.");
+            alert("You do not have enough coins to make a call 📞.");
             return;
         } 
         const card = e.target.closest(".card");
         const number = card.querySelector(".number").innerText;
         const name = card.querySelector(".name").innerText;
-        alert(`Calling ${name} : ${number}`);
+        alert(`Calling 📞 ${name} : ${number}`);
         coinCount = coinCount - 20;
         updateDisplay();
         const time = new Date().toLocaleTimeString();
@@ -59,3 +59,20 @@ document.addEventListener("click", function(e) {
         historyContainer.innerHTML = '';
     }
 });
+
+const buttons = document.querySelectorAll('.my-btn');
+        
+        buttons.forEach(button => {
+            button.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = "#e4e1e1ff";
+                this.style.transform = "scale(1.05)";
+                this.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+            });
+            
+            
+            button.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = "";
+                this.style.transform = "";
+                this.style.boxShadow = "";
+            });
+        });
