@@ -117,8 +117,14 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 = By using document.createElement() command , I can create a new element into DOM and can insert it using variable.appendChild() command.
 
 3. What is **Event Bubbling** and how does it work?
+Event bubbling is work process in JavaScript when any event happens on any element then its happens to it parent element as well if the parent element have the same event attached .
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+= Event delegation is a technique where a single event listener is added to a parent element instead of multiple listeners on individual child elements. This approach leverages the event bubbling phase to handle events more efficiently.
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+= preventDefault: Cancels the event if it is cancelable, without stopping further propagation of the event.
+ stopPropagation: Prevents further propagation of the current event.
 
 ---
 

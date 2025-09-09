@@ -7,30 +7,31 @@
     <link rel="icon" href="./assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-[#F2F2F2] max-w-[1920px] mx-auto">
     <!-- navbar  -->
-    <nav class="flex justify-between px-[60px] py-[25px] bg-white">
+    <nav class="px-[60px] py-[25px] bg-white flex flex-col items-center space-y-2 md:flex-row md:justify-between">
         <div class="flex items-center gap-2 w-[50px] h-[50px]">
             <img src="./assets/logo.png" class="w-[50px] h-[50px]">
             <h1 class="text-xl font-bold text-[#006747]">Emergency<br>Service</h1>
         </div>
         <div class="flex items-center gap-6">
-            <div class="flex gap-3 bg-[#F2F2F2] w-[125px] h-[52px] rounded-[50px] px-[40px] py-[11px]"><span id="heart">0</span><img src="./assets/heart.png" class="w-[30x] h-[30px]"></div>
+            <div class="flex gap-3 bg-[#F2F2F2] w-[125px] h-[52px] rounded-[50px] px-[40px] py-[11px]"><span id="heart">0</span><img src="./assets/heart.png" class="w-[30px] h-[30px]"></div>
             <div class="flex gap-3 bg-[#F2F2F2] w-[106px] h-[52px] rounded-[50px] px-[20px] py-[11px]"><span id="coin">100</span><img src="./assets/coin.png" class="w-[30px] h-[30px]"></div>
             <div class="w-[127px] h-[52px] bg-[#00A63E] text-[#FFFFFF] rounded-[50px] px-[34px] py-[12px]"><span id="copy">0</span> copy</div>
         </div>
     </nav>
     <!-- Hero Section  -->
-    <section class=" text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] h-[239px] py-[32.5px]">
+    <section class=" text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-[#FFFFFF] w-full h-auto py-[32.5px]">
         <img src="./assets/logo.png" class=" flex justify-center w-[92px] h-[92px] mx-auto">
         <h1 class="font-bold text-[40px] ">Emergency Service Directory</h1>
         <p class="text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </section>
     <!-- Main Section  -->
-     <section class="max-w-[1800px] h-[1230px] flex gap-[30px] mx-[60px] my-[80px]">
-
-    <div class="w-[1370px] h-[1140px] grid grid-cols-3 gap-[30px]">
+     <section class="max-w-[1800px] h-[1230px] flex gap-[30px] mx-[60px] my-[80px] main">
+    <!-- Emergency Hotline Section  -->
+    <div class="w-[1370px] h-[1140px] grid grid-cols-1 gap-[0px] md:grid-cols-3 gap-[30px] div1">
         <div class="w-[436px] h-[360px] p-[32px] shadow-lg card rounded-[12px] bg-white">
             <div class="flex justify-between">
                <div class="w-[60px] h-[60px] rounded-[16px] bg-[#FFE3E2] px-3 py-3"><img src="./assets/emergency.png" class="w-[32px] h-[32px]"></div>
@@ -90,7 +91,7 @@
                 <h3 class="text-[24px] font-bold name">Fire Service Number</h3>
                 <p class="text-[18px]">Fire Service</p>
                 <h2 class="text-[32px] font-bold pt-[21px] number">999</h2>
-                <button class="btn btn-soft w-[61 px] h-[37px] rounded-[6px]  text-[18px] text-[#5C5C5C] rounded-[999px]">Fire</button>
+                <button class="btn btn-soft w-[61px] h-[37px] rounded-[6px]  text-[18px] text-[#5C5C5C] rounded-[999px]">Fire</button>
             </div>
             <div class="pt-[21px] flex">
                 <button class="btn w-[182.33px] copyBtn my-btn h-[40px] border text-[16px] rounded-[8px] text-[#5C5C5C]">
@@ -248,8 +249,8 @@
             </div>
         </div>
     </div>
-
-    <div class="w-[400px] h-[1140px] px-[24px] py-[24px] bg-white rounded-[12px]">
+    <!-- History Section  -->
+    <div class="w-[400px] h-[1140px] px-[24px] py-[24px] bg-white rounded-[12px] div2">
         <div class="flex justify-between w-[352px] h-[52px] ">
             <h2 class="flex gap-[8px] my-[12px]"><svg class="w-[24px] h-[24px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
